@@ -1,18 +1,18 @@
-# hexo-theme-snippet
+# Hexo theme : Snippet
 
-Snippet 简洁而不简单，也许是一款你寻找已久hexo主题。
+Snippet is concise and simple hexo theme, that you may have been looking for for a long time!
 
-如果本主题也是你喜欢的菜，请动动手指 [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers) 支持一下
+If you love the theme, please show your support by [Staring](https://github.com/madc0de/hexo-theme-snippet/stargazers) it.
 
-[![Build Status](https://www.travis-ci.org/shenliyang/hexo-theme-snippet.svg?branch=master)](https://www.travis-ci.org/shenliyang/hexo-theme-snippet)
-[![Read the Docs](https://img.shields.io/badge/docs-complete-brightgreen)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/README.md)
-[![HitCount](http://hits.dwyl.io/shenliyang/hexo-theme-snippet.svg)](http://hits.dwyl.io/shenliyang/hexo-theme-snippet)
+[![Build Status](https://www.travis-ci.org/shenliyang/hexo-theme-snippet.svg?branch=master)](https://www.travis-ci.org/madc0de/hexo-theme-snippet)
+[![Read the Docs](https://img.shields.io/badge/docs-complete-brightgreen)](https://github.com/madc0de/hexo-theme-snippet/blob/master/README.md)
+[![HitCount](http://hits.dwyl.io/shenliyang/hexo-theme-snippet.svg)](http://hits.dwyl.io/madc0de/hexo-theme-snippet)
 [![mnt-image](https://img.shields.io/maintenance/yes/2019.svg)](../../commits/master)
 [![codebeat badge](https://codebeat.co/badges/6ef2dcd2-af90-40e0-9628-ac689441f774)](https://codebeat.co/projects/github-com-shenliyang-hexo-theme-snippet-master)
-[![GitHub stars](https://img.shields.io/github/stars/shenliyang/hexo-theme-snippet.svg)](https://github.com/shenliyang/hexo-theme-snippet/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/shenliyang/hexo-theme-snippet.svg)](https://github.com/shenliyang/hexo-theme-snippet/network)
+[![GitHub stars](https://img.shields.io/github/stars/madc0de/hexo-theme-snippet.svg)](https://github.com/madc0de/hexo-theme-snippet/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/madc0de/hexo-theme-snippet.svg)](https://github.com/madc0de/hexo-theme-snippet/network)
 [![hexo version](https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg)](http://hexo.io)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shenliyang/hexo-theme-snippet/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/madc0de/hexo-theme-snippet/blob/master/LICENSE)
 
 
 [主题Demo戳这里](http://shenliyang.github.io?rf=gh-demo)
