@@ -17,44 +17,45 @@ If you love the theme, please show your support by [Staring](https://github.com/
 
 [主题Demo戳这里](http://shenliyang.github.io?rf=gh-demo)
 
-![hexo-theme-snippet](http://snippet.shenliyang.com/img/snippet-screenshots1000.jpg "Snippet主题")
+![hexo-theme-snippet](https://d33wubrfki0l68.cloudfront.net/763823edc0bbea422cf3d04a3b7f49673a295baf/611b4/themes/screenshots/asnippet@2x.jpg "Snippet Theme")
 
 
-## 主题特点
+## Theme Features
 
-- [x] 原生JavaScript实现，去jQuery化
-- [x] 样式支持CSS预处理器Less，方便主题自定义
-- [x] 文章过期提醒功能
-- [x] 文章阅读进度条
-- [x] 网站公告功能
-- [x] 首页图片懒加载
-- [x] 首页文章缩略图自动检索文章内图片，支持自动随机图片
-- [x] 主题支持响应式
-- [x] 支持3D云标签
-- [x] 支持文章推送和文章打赏
-- [x] 站内本地搜索和谷歌搜索
-- [x] 支持多个第三方评论系统
-- [x] 支持网站统计和不蒜子访客统计
-- [x] 移动端的简洁设计
-- [x] 支持代码高亮并支持自定义高亮样式
-- [x] 支持Shell脚本通过Travis CI自动化部署Hexo博客
-- [x] 支持Hexo自动化部署结果发送邮件和实时推送到钉钉
-
+- [x] Native JavaScript implementation of jQuery on the go.
+- [x] Style supports CSS preprocessor Less for easy theme customization
+- [x] Article expiration reminder
+- [x] Website announcement function
+- [x] Homepage image lazy loading
+- [x] Home article thumbnails Automatically retrieved from pictures in articles (support for random pictures)
+- [x] Responsive Theme (Mobile First)
+- [x] Support 3D Cloud Tags
+- [x] Support article push and article reward
+- [x] Local search and Google search
+- [x] Support for multiple third-party comment systems
+- [x] Support website statistics and non-garlic visitors statistics
+- [x] Simple design on mobile
+- [x] Support code highlighting and support custom highlight styles
+- [x] Supports Shell Script to automate Hexo blog deployment via Travis CI
+- [x] Support Hexo automated deployment results to send emails and real-time push to nails
 
 
-# **基础篇**
 
-> 如果你在此之前使用的是 `Hexo 2.x` 版本，为了避免未知的错误，请备份好数据，或者建立新的博客目录
+# **Basic Articles**
 
->"主题目录" => `themes\hexo-theme-snippet`, "Hexo根目录" => 项目主目录;
-"主题配置" => `themes\hexo-theme-snippet\_config.yml`, "Hexo配置" => 项目主目录下`_config.yml`
+> If you were using lower than Hexo 2.x, in order to avoid unknown errors, please back up your data or create a new blog directory.
 
-### 1. 环境搭建
+> "Theme Directory" => `themes\hexo-theme-snippet`
+> "Hexo Root Directory" =>`Project home directory`
+> "Theme Configuration" => `themes\hexo-theme-snippet\_config.yml`
+> "Hexo Configuration" => `_Config.yml` in the project's home directory
+
+### 1. Environment Setup
 
 需要`Node.js` 环境、`Git` 环境以及 `Hexo` ,如果你尚未安装或者不了解 `Hexo`，请参考 [官方教程](https://hexo.io/zh-cn/docs/index.html) 进行了解以及安装。如果需要构建工具请自行安装，或使用本主题的Gulp方式。
 
 
-### 2. 下载主题
+### 2. Theme Download
 
 有两种方式获取本主题--下载 `*.zip` 文件和通过 `git`方式：
 
@@ -65,7 +66,7 @@ If you love the theme, please show your support by [Staring](https://github.com/
 git clone git://github.com/shenliyang/hexo-theme-snippet.git themes/hexo-theme-snippet
 ```
 
-### 3. 安装主题插件
+### 3. Install Theme Plugin
 
 因为 **hexo-theme-snippet** 使用了 `ejs` 模版引擎 、 `Less` CSS预编译语言以及在官方插件的基础上
 进行功能的开发，以下为必装插件：
@@ -74,7 +75,7 @@ git clone git://github.com/shenliyang/hexo-theme-snippet.git themes/hexo-theme-s
 npm i hexo-renderer-ejs hexo-renderer-less hexo-deployer-git -S
 ```
 
-### 4. 部署主题
+### 4. Theme Deployment
 
 > 如果没有更改过主题源文件,也不需要代码优化可以跳过1,2,3步骤
 
@@ -109,18 +110,18 @@ hexo s -p 4000 或者 hexo s  //启动本地服务默认
 hexo d 或者 gulp deploy  //部署发布
 ```
 
-### 5. 更新主题
+### 5. Theme Updating
 
-主题可能会不定时优化和更新，更新主题代码：
+The theme may be optimized and updated from time to time, update the theme code using below commands.
 
 ``` bash
 cd themes/hexo-theme-snippet
 git pull
 ```
 
-# **主题篇**
+# **Topic**
 
-### 1. 主题配置
+### 1. Theme Configuration
 
 ``` yaml
 
@@ -359,7 +360,7 @@ robot: 'all'  //控制搜索引擎的抓取和索引编制行为，默认为all
 version: 1.2.1  //当前主题版本号
 ```
 
-### 主题使用技巧及功能扩展
+### Theme skills usage and function expansion
 1. 修改新增文章Front-matter模板,修改`scaffolds`目录下的`post.md`模板
 > 模板文件内部不要保留注释部分,关键词后面请使用英文冒号
 ``` yml
@@ -373,22 +374,22 @@ version: 1.2.1  //当前主题版本号
   ---
 ```
 
-2. 启用站内本地搜索功能
+2. Enable local search within the site
 
-如果要使用本地站点搜索，必须安装插件hexo-generator-json-content来创建本地搜索json文件
+If you want to use local site search, you must install the plugin **hexo-generator-json-content** to create a local search json file
 ```bash
-npm i hexo-generator-json-content@2.2.0 -S
+npm i hexo-generator-json-content --save
 ```
-然后修改主题配置_config.yml文件下`jsonContent`相关参数。
+Then modify the `jsonContent` related parameters under theme configuration _config.yml.
 
-# **提升篇**
+# **Ascension**
 
-## 1. Travis CI 介绍
-CI即持续集成系统。对个人而言，就是让你的代码在提交到远程(这里是GitHub)，立即自动编译，自动化测试、自动部署等。
+## 1. Travis CI Introduction
+CI stands for Continuous Integration System. For individuals, it means that your code is submitted to the remote (here is GitHub), and it is automatically compiled, tested, and deployed automatically.
 
-不需要在担心更换电脑时，还要从新部署环境的问题，只要你能向远程推送文章，其他的事情就都可以交给Travis CI处理就ok了。
+There is no need to worry about replacing the computer, but also to re-deploy the environment. As long as you can push articles to the remote, other things can be left to Travis CI for processing.
 
-## 2. Travis CI 使用
+## 2. Travis CI usages
 
 > 默认前提是已经通过Github进行授权登录Travis网站，并关联了GitHub上的仓库和相关配置。
 1. 拷贝主题下的`gulpfile.js` `travis.yml` `travis.sh` 到项目根目录
@@ -443,98 +444,83 @@ env:
    - GH_REF: github.com/shenliyang/shenliyang.github.io.git #更改为自己git地址
 ```
 
-3. 提交代码到Github，实现自动部署
-4. 当 `.travis.yml `配置文件修改完成后，将其提交到远程仓库的 hexo 分支下，此时如果之前的配置一切ok，我们应该能在 Travis CI 的博客项目主页页面中看到自动构建已经在开始执行了。上面会显示出构建过程中的日志信息及状态等。
+3. Submit code to Github for automatic deployment
+4. When the `.travis.yml` configuration file has been modified, submit it to the hexo branch of the remote repository. At this point, if everything is ok in the previous configuration, we should be able to see on the home page of the Travis CI blog project that the automatic build has been completed. The above will display the log information and status during the build process.
 
-## 3. 主题开发
-Gulp 执行启用主题开发模式
+## 3. Theme development
+Gulp implementation enables theme development mode
 ``` bash
 gulp dev
 ```
-会监听样式less或者JS文件的变动。然后执行上面的【主题发布】即可。
+Will listen for changes in styleless or JS files. Then execute [Topic Release] above.
 
-### 运行预览
+### Run preview
 ``` bash
 hexo clean && hexo g && hexo s -p 4000
 ```
 
-监听4000端口，使用浏览器打开地址`http://localhost:4000`进行预览。
+Use your browser to open the address `http: // localhost: 4000` for preview.
 
-# **其他**
+# **Others**
 
-## 感谢
-在设计这款主题的时候参考了好多主题和博客的设计和创意，深表感谢！
+## Thank you
+In designing this theme, I have referred to the design and creativity of many themes and blogs, thank you very much!
 
-## 鼓励
-**如果觉得本主题还不错，您的支持和鼓励才是后续更新最大的动力，== 欢迎  [Star](https://github.com/shenliyang/hexo-theme-snippet/stargazers)下 ==**
+## Encourage
+**If you think this theme is good, your support and encouragement is the biggest motivation for subsequent updates.**
 
-![Stargazers over time](https://starchart.cc/shenliyang/hexo-theme-snippet.svg)
+## Aim
+**Dedicated to the simple and lightweight theme, easy to configure out of the box**, this theme project will be continuously maintained and updated, will not run away, please use it with confidence.
 
-## 宗旨
-主题宗旨：**致力主题简洁轻量，配置方便开箱即用**，该主题项目会持续维护和更新，不会跑路，请放心使用。
+## Contribution
+Accept all forms of contribution, including but not limited to submitting issues or needs, fixing code.
+Everyone is welcome to mention Issue or Pull Request.
 
-## 贡献
-接受各种形式的贡献，包括但不限于提交问题或需求，修复代码。
-欢迎大家提Issue或者Pull Request。
-
-> Hexo框架追求的是快速、简洁，高效。喜欢绚丽，添加各种功能，折腾的朋友，建议移步至：[wordpress官网](https://cn.wordpress.org/)
+> The Hexo framework is fast, simple and efficient. Friends who like to be gorgeous, add various functions, and toss, I suggest you move to [wordpress] (https://wordpress.org/)
 
 
-## 你不知道的提Issues技巧
-> 强烈推荐阅读 [《提问的智慧》](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)、[《如何向开源社区提问题》](https://github.com/seajs/seajs/issues/545) 和 [《如何有效地报告 Bug》](http://www.chiark.greenend.org.uk/%7Esgtatham/bugs-cn.html)、[《如何向开源项目提交无法解答的问题》](https://zhuanlan.zhihu.com/p/25795393)，更好的问题更容易获得帮助。
+## Common Problem
 
-<b>* 已阅读以上文章，并知晓，可以 </b> [提Issues](https://github.com/shenliyang/hexo-theme-snippet/issues/new) 了。
+#### 1. The search function is unavailable, and the content.json file cannot be found?
 
-
-## 常见问题
-
-#### 1. 搜索功能不能用，content.json文件找不到？
-
-需要安装hexo-generator-json-content插件：
+Need to install the **hexo-generator-json-content** plugin:
 
 ``` bash
 npm i hexo-generator-json-content@2.2.0 -S
 ```
 
-#### 2. 谷歌搜索没有响应？
+#### 2. Google search is not working?
 
-如果使用谷歌搜索没有响应，确定是否已经科学上网
+If using Google search does not respond, determine if you are online.
 
-#### 3. 怎么设置首页文章缩略图自动检索文章内图片？
+#### 3. How to set the thumbnail of the homepage article to automatically retrieve the images in the article?
 
-首页文章缩略图加载规则: 自定义文章缩略图 > 自动检索文章内的图片 > defaultImgs(随机获取) > 无图模式列表
+**Homepage article thumbnail loading rules :** custom article thumbnails > automatic retrieval of images in articles > defaultImgs (randomly acquired) > list without image mode
 
-在`Front-matter`中：
-指定img变量 -> 为固定缩略图
-不指定img变量 -> 自动检索文章内的图片
+In `Front-matter`:
+Specify img variable-> fixed thumbnail
+Do not specify the img variable-> automatically retrieve images in articles
 
 
-#### 4. 在url哪里可以访问到本地静态文件吗？
+#### 4. Where can I access local static files at url?
 
-在主题 `source` 目录下新建文件夹，例如: `static`文件夹，然后添加静态资源，例如: xxx.pdf文件， 访问：*`http://yoursite.com/static/xxx.pdf`*
+Create a new folder under the theme `source` directory, for example:` static` folder, and then add static resources, for example: xxx.pdf file, visit: * `http: //yoursite.com/static/xxx.pdf`*
 
-#### 5. 这个主题有分页功能吗？
+#### 5. Does this theme have pagination?
 
-主题已经集成分页功能，在Hexo配置中修改
+Theme has integrated paging function, can be modified in Hexo configuration
 
-| 参数       | 描述        | 默认值  |
+| Parameter       | Description        | Defaults  |
 | ------------- |:-------------:| :-----:|
-| per_page     | 每页显示的文章量 (0 = 关闭分页功能) |  10 |
-| pagination_dir     | 分页目录      |   page |
+| per_page     | Number of articles displayed per page (0 = pagination off) |  10 |
+| pagination_dir     | Paging Directory      |   page |
 
-#### 6. 为什么右侧小工具标题都为英文呢？
 
-可能是您忘记预设网站语言，而启用默认语言了，请先在Hexo配置中调整 language 设定
+#### 6. Disagreements on Hexo tags and classification methods
 
-``` bash
-language: zh-CN
-```
+> Only articles support classification and tags, you can set them in Front-matter. In other systems, classifications and labels sound similar, but there are obvious differences between the two in Hexo: classifications are sequential and hierarchical, that is, `Foo, Bar` is not equal to` Bar, Foo`; and tags There is no order or hierarchy.
 
-#### 7. 关于Hexo标签和分类方法的分歧
-
-> 只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说  `Foo, Bar` 不等于 `Bar, Foo`；而标签没有顺序和层次。
-
-如果您有过使用WordPress的经验，就很容易误解Hexo的分类方式。WordPress支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是Hexo不支持指定多个同级分类。下面的指定方法：
+If you have any experience using WordPress, it is easy to misunderstand how Hexo is classified. WordPress supports multiple categories for an article, and these categories can be siblings, or parent-child categories. But Hexo does not support specifying multiple peer classifications. The following methods are specified:
 
 ``` bash
 categories:
@@ -542,30 +528,30 @@ categories:
 - Life
 ```
 
-会使分类Life成为Diary的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。
+Makes the classification Life a sub-category of Diary, rather than a side-by-side classification. Therefore, it is necessary to choose the classification that is as accurate as possible for your article.
 
-Hexo官方文档: [分类方法的分歧](https://hexo.io/zh-cn/docs/front-matter#分类和标签)
+Hexo official documentation: [Categories & Tags](https://hexo.io/docs/front-matter#Categories-amp-Tags)
 
-#### 8. tags 以及categories 页面显示不正确，不能访问，显示404？
+#### 7. The tags and categories pages are displayed incorrectly and cannot be accessed, showing 404?
 
-当使用主题访问，域名+/tags  或 域名+ /categories 若访问404，是正常情况的。因为这些路径本不属于主题或者Hexo框架的一部分。而是由用户主动新建页面扩展而来。
+When using topic access, domain name + / tags or domain name / / categories is normal if you access 404. Because these paths are not part of the theme or Hexo framework. Instead, the user actively creates new pages and extends them.
 
-可以新建页面，比如：tags和categories，按以下命令格式：
+You can create new pages, such as tags and categories, in the following command format:
+
 ```bash 
  hexo new page tags 和 hexo new page categories
 ````
 
-> 没有找到你需要的问题解决方案，建议阅读[《你不知道的提Issues技巧》](https://github.com/shenliyang/hexo-theme-snippet#你不知道的提Issues技巧) 再提Issues。
+> Did not find the solution to the problem you need, I suggest reading "Issues Tips You Didn't Know" and mentioning Issues.
 
+## Version update log
 
-## 版本更新日志
+  - Added Gitalk review system
+  - Add blog automation deployment results to mobile phone nails in real time, and learn the deployment situation the first time
 
-  - 增加Gitalk评论系统
-  - 增加博客自动化部署结果实时推送到手机钉钉上，第一时间了解部署情况
+  Example of automated deployment result notification:
 
-  自动化部署结果通知示例：
-
-  ![自动化部署结果通知示例](https://s2.ax1x.com/2019/03/06/kvnejs.jpg)
+  ![Example of automated deployment result notification](https://s2.ax1x.com/2019/03/06/kvnejs.jpg)
 
 ## License
 
