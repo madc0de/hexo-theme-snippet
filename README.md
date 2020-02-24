@@ -46,8 +46,11 @@ If you love the theme, please show your support by [Staring](https://github.com/
 > If you were using lower than Hexo 2.x, in order to avoid unknown errors, please back up your data or create a new blog directory.
 
 > "Theme Directory" => `themes\hexo-theme-snippet`
+
 > "Hexo Root Directory" =>`Project home directory`
+
 > "Theme Configuration" => `themes\hexo-theme-snippet\_config.yml`
+
 > "Hexo Configuration" => `_Config.yml` in the project's home directory
 
 ### 1. Environment Setup
